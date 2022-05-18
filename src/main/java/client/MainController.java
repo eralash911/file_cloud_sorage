@@ -541,9 +541,6 @@ public class MainController implements  MessageProcessor {
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(this.getClass().getResource("aboutProgram.fxml"));
         Parent parent = loader.load();
-        AboutProgramController controller = loader.getController();
-        controller.setStage(aboutStage);
-        controller.setMessageService(messageService);
         Scene scene = new Scene(parent);
         aboutStage.setScene(scene);
         aboutStage.getIcons().add(new Image(getClass().getResourceAsStream("listik.png")));
