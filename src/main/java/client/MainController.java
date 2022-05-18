@@ -536,17 +536,7 @@ public class MainController implements  MessageProcessor {
         fileStage.show();
     }
 
-    public void aboutFileStorage(ActionEvent actionEvent) throws IOException {
-        Stage aboutStage = new Stage();
-        FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(this.getClass().getResource("aboutProgram.fxml"));
-        Parent parent = loader.load();
-        Scene scene = new Scene(parent);
-        aboutStage.setScene(scene);
-        aboutStage.getIcons().add(new Image(getClass().getResourceAsStream("listik.png")));
-        aboutStage.setTitle("About File Storage");
-        aboutStage.show();
-    }
+
 }
 
 
