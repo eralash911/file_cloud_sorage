@@ -521,7 +521,6 @@ public class MainController implements  MessageProcessor {
     }
 
 
-
     public void createFile(ActionEvent actionEvent) throws IOException {
         Stage fileStage = new Stage();
         FXMLLoader loader = new FXMLLoader();
